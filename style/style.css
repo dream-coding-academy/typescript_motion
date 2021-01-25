@@ -1,0 +1,108 @@
+:root {
+  --bg-main-color: #00000080;
+  --bg-accent-color: #2d2d2d;
+  --accent-color: #f64435;
+  --text-accent-color: #ffe498;
+  --text-edit-bg-color: #575757;
+  --border-color: #3f3f3f;
+  --shadow-color: #202020;
+  --document-bg-color: #68686850;
+  --component-bg-gradient: radial-gradient(circle, #646464e6 0%, #363636e6 100%);
+  --smokywhite: #dddbd8;
+  --black: #000000;
+  --translucent-black: #00000099;
+}
+
+li {
+  list-style: none;
+  padding-left: 0;
+}
+
+p {
+  color: var(--smokywhite);
+}
+
+label {
+  color: var(--text-accent-color);
+}
+
+* {
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../assets/background.png') center/cover no-repeat;
+  font-family: Roboto, Oxygen, sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.app {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  background: var(--bg-main-color);
+  border-bottom: 1px solid var(--bg-accent-color);
+  text-align: center;
+}
+
+.banner__title {
+  margin: 20px;
+  color: var(--accent-color);
+}
+
+.control-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-button {
+  margin: 0.1em 0.2em;
+  text-align: center;
+  user-select: none;
+  padding: 1em 3em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: white;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.document {
+  height: 100%;
+  background-color: var(--document-bg-color);
+  /* Firefox */
+  scrollbar-width: 6px;
+  scrollbar-color: var(--bg-accent-color);
+  scrollbar-face-color: var(--accent-color);
+}
+
+.document::-webkit-scrollbar {
+  /* Safari and Chrome */
+  background-color: var(--bg-accent-color);
+  width: 6px;
+}
+
+.document::-webkit-scrollbar-thumb {
+  /* Safari and Chrome */
+  background-color: var(--accent-color);
+}
+
+.footer {
+  background: var(--bg-main-color);
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
