@@ -254,3 +254,21 @@ body {
 .mute-children * {
   pointer-events: none;
 }
+
+.lifted {
+  animation: drag_start 250ms;
+  opacity: 0.2;
+}
+
+@keyframes drag_start {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.drop-area {
+  border: 2px solid var(--accent-color);
+}
